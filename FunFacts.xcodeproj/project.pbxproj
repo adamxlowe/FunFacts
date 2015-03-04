@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F4519AE1AA69A8600472559 /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4519AD1AA69A8600472559 /* FactBook.m */; };
+		6F4519B11AA6AEE100472559 /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4519B01AA6AEE100472559 /* ColorWheel.m */; };
 		6F5663041AA4F89D00A596E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5663031AA4F89D00A596E8 /* main.m */; };
 		6F5663071AA4F89D00A596E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5663061AA4F89D00A596E8 /* AppDelegate.m */; };
 		6F56630A1AA4F89D00A596E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5663091AA4F89D00A596E8 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F4519AC1AA69A8600472559 /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
+		6F4519AD1AA69A8600472559 /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
+		6F4519AF1AA6AEE100472559 /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
+		6F4519B01AA6AEE100472559 /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
 		6F5662FE1AA4F89D00A596E8 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5663021AA4F89D00A596E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F5663031AA4F89D00A596E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,10 +91,14 @@
 				6F5663061AA4F89D00A596E8 /* AppDelegate.m */,
 				6F5663081AA4F89D00A596E8 /* ViewController.h */,
 				6F5663091AA4F89D00A596E8 /* ViewController.m */,
+				6F4519AC1AA69A8600472559 /* FactBook.h */,
+				6F4519AD1AA69A8600472559 /* FactBook.m */,
 				6F56630B1AA4F89D00A596E8 /* Main.storyboard */,
 				6F56630E1AA4F89D00A596E8 /* Images.xcassets */,
 				6F5663101AA4F89D00A596E8 /* LaunchScreen.xib */,
 				6F5663011AA4F89D00A596E8 /* Supporting Files */,
+				6F4519AF1AA6AEE100472559 /* ColorWheel.h */,
+				6F4519B01AA6AEE100472559 /* ColorWheel.m */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -168,6 +178,7 @@
 				TargetAttributes = {
 					6F5662FD1AA4F89D00A596E8 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = J78FET2M39;
 					};
 					6F5663161AA4F89D00A596E8 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -221,7 +232,9 @@
 			files = (
 				6F56630A1AA4F89D00A596E8 /* ViewController.m in Sources */,
 				6F5663071AA4F89D00A596E8 /* AppDelegate.m in Sources */,
+				6F4519AE1AA69A8600472559 /* FactBook.m in Sources */,
 				6F5663041AA4F89D00A596E8 /* main.m in Sources */,
+				6F4519B11AA6AEE100472559 /* ColorWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -353,9 +369,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -412,6 +431,7 @@
 				6F5663231AA4F89D00A596E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F5663241AA4F89D00A596E8 /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +440,7 @@
 				6F5663261AA4F89D00A596E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
